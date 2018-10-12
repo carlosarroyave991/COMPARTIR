@@ -1,0 +1,3081 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto TallerNro4</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto TallerNro4</h3>
+<p />
+<h1 class="cover">Documento de Requisitos del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 04/10/2018</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Ticket">
+<p>
+Ticket</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Cotecnova Software">
+<p> Cotecnova Software</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+INTRODUCCION</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0002">
+PARTICIPANTES DEL PROYECTO</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0003">
+DESCRIPCION DEL SISTEMA ACTUAL</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0004">
+OBJETIVOS DEL SISTEMA</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0005">
+CATALOGO DE REQUISITOS DEL SISTEMA</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+REQUISITOS DE ALMACENAMIENTO DE INFORMACION</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0007">
+REQUISITOS FUNCIONALES</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">5.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0008">
+DIAGRAMAS DE CASOS DE USO</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">5.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0009">
+DEFINICION DE ACTORES</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">5.2.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0010">
+CASOS DE USO DEL SISTEMA</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+REQUISITOS NO FUNCIONALES</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">6 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0012">
+MATRIZ DE RASTREABILIDAD</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">7 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0013">
+CONFLICTOS PENDIENTES DE RESOLUCION</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">8 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0014">
+GLOSARIO DE TERMINOS</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="SEC-0001" />
+<h1 align="left">1 
+INTRODUCCION</h1><a name="PRG-0001" />
+<p>La empresa ticket, requiere sistematizar su modelo de negocio donde busca almacenar la informacion de los socios , peliculas, la gestion de las peliculas y las consultas..</p>
+<a name="SEC-0002" />
+<h1 align="left">2 
+PARTICIPANTES DEL PROYECTO</h1><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Ticket</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Cl. 10 #3-95</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">2111804    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1"> 2112545</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0004" title="Corporacion De Estudios Tecnologicos Del Norte Del Valle">Cotecnova</a> Software</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Cl. 10 #3-95</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">3104607480 - 3186301835</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">3104607480 - 3186301835</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Cristian Steven Gonzalez Arango</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002"> Cotecnova Software</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Carlos Andres Arroyave Ladino</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002"> Cotecnova Software</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Mujer(mercadeo)</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Ticket</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Mercadeo</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Arvey Barahona</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Ticket</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesor asesor</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0003" />
+<h1 align="left">3 
+DESCRIPCION DEL SISTEMA ACTUAL</h1><a name="PRG-0003" />
+<p>El sistema debera almacenar la informacion de los socios , peliculas. Tambien debe de gestionar aquella informacion para proporcionarse la  al usuario (socio) que la solicite.</p>
+<a name="SEC-0004" />
+<h1 align="left">4 
+OBJETIVOS DEL SISTEMA</h1><a name="OBJ-0011" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0011</th>
+<th align="left" valign="top" width="100%">
+Creacion del software</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Tener un estado de funcionabilidad, con actualizaciones constantes y con una base de datos bien estructurada para un buen manejo de la informacion.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">
+<ul>
+<a name="OBJ-0002" />
+<li>
+<b>[OBJ-0002] 
+Gestionar Socios</b>:
+		
+    El sistema deberá 
+<em>
+Gestionar la informacion de los socios.</em> <ul>
+<a name="OBJ-0010" />
+<li>
+<b>[OBJ-0010] 
+Gestor de busqueda de informacion</b>:
+		
+    El sistema deberá 
+<em>
+Gestionar la informacion del socio, ya sea mostrandola o almacenandola de la manera correcta.</em> <ul>
+</ul>
+</li>
+</ul>
+</li>
+<a name="OBJ-0012" />
+<li>
+<b>[OBJ-0012] 
+Gestion de peliculas</b>:
+		
+    El sistema deberá 
+<em>
+Gestionar la informacion de las peliculas.
+<br />
+</em> <ul>
+<a name="OBJ-0013" />
+<li>
+<b>[OBJ-0013] 
+Gestor de busqueda de informacion</b>:
+		
+    El sistema deberá 
+<em>
+Gestionar la informacion de las peliculas , ya sea mostrandola o almacenandola de una manera mas eficiente.</em> <ul>
+</ul>
+</li>
+</ul>
+</li>
+<a name="OBJ-0014" />
+<li>
+<b>[OBJ-0014] 
+Gestion de alquiler</b>:
+		
+    El sistema deberá 
+<em>
+Gestionar la informacion de los alquileres.</em> <ul>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h1 align="left">5 
+CATALOGO DE REQUISITOS DEL SISTEMA</h1><a name="SEC-0006" />
+<h2 align="left">5.1 
+REQUISITOS DE ALMACENAMIENTO DE INFORMACION</h2><a name="IRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Informacion del cliente.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 04/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0001" title="Socio">
+                                [FRQ-0001] 
+Socio</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Cliente.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0004" />
+Tomar los datos del cliente para registrarlo como socio.
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>999 
+                        año(s)</td>
+<td>999 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>1500</td>
+<td>3000</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Informacion de pelicula.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0002" title="Pelicula">
+                                [FRQ-0002] 
+Pelicula</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+Debe de almacenar la informacion de las respectivas peliculas..
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0007" />
+El sistema debe de almacenar la informacion de la pelicula para que el socio tenga presente una breve descripcion de la pelicula.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>999 
+                        año(s)</td>
+<td>999 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>2500</td>
+<td>3000</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Informacion de alquiler.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0003" title="Alquiler">
+                                [FRQ-0003] 
+Alquiler</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+El sistema debe almacenar la informacion respectiva con el alquiler..
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0005" />
+El sistema debe de almacenar la informacion de la cantidad de peliculas en alquilar y en disposicion para el socio.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>999 
+                        año(s)</td>
+<td>999 
+                        año(s)</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>2500</td>
+<td>3000</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0007" />
+<h2 align="left">5.2 
+REQUISITOS FUNCIONALES</h2><a name="FRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Socio</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#IRQ-0001" title="Informacion del cliente.">
+                                [IRQ-0001] 
+Informacion del cliente.</a>
+</li>
+<li>
+<a href="#NFR-0002" title="Generar reportes">
+                                [NFR-0002] 
+Generar reportes</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Debe almacenar la informacion del socio,</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Pelicula</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#IRQ-0003" title="Informacion de pelicula.">
+                                [IRQ-0003] 
+Informacion de pelicula.</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Debera almacenar la informacion de las peliculas.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0003</th>
+<th align="left" valign="top" width="100%">
+Alquiler</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#IRQ-0002" title="Informacion de alquiler.">
+                                [IRQ-0002] 
+Informacion de alquiler.</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Almacenar la informacion del alquiler.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0008" />
+<h3 align="left">5.2.1 
+DIAGRAMAS DE CASOS DE USO</h3><a name="GRF-0001" />
+<p align="center">
+<img src="..\Casos de Uso\Diagrama caso de uso.png" title="..\Casos de Uso\Diagrama caso de uso.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Caso de uso BOT</p>
+<a name="SEC-0009" />
+<h3 align="left">5.2.2 
+DEFINICION DE ACTORES</h3><a name="ACT-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0004</th>
+<th align="left" valign="top" width="100%">
+Servidor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Proporciona informacion solicitada por los clientes.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+Administrador</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Administrador que entra a interactuar con el sistema.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Cajero</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Genera factura.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Socio</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Descripcion de personas que desean solicitar informacion del servidor.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0010" />
+<h3 align="left">5.2.3 
+CASOS DE USO DEL SISTEMA</h3><a name="UC-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Registro</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+El usuario se registra en el sistema.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+Se buscara en la base de datos informacion relacionada a la peticion del cliente.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0002" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Cliente solicita informacion</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+guardar peticion del usuario para relacionarla con futuras peticiones.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Ingresar medio de pago</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 06/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+Valida la informacion por el cual el cliente accede por un procedimiento para volverse socio de la empresa.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0003" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+Se analiza la informacion suministrada por el usuario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">1</td>
+<td>
+9999
+
+             
+            año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Validacion de datos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+Al socio mandar la solicitud de ingreso a su cuenta.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+Se ingresa la informacion para acceder a la cuenta.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Si tiene mas de tres intentos tratando de entrar a la misma cuenta, bloquearlo por 2 minutos.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Menu peliculas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+El socio ingresa al menu de peliculas en el que escogera una opcion de su gusto.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+haber iniciado sesion.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0008" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Ingresar a pagos pendientes.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0009" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Ingresa a Alquiler de peliculas.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0010" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0003" title="Este actor representa Descripcion de personas que desean solicitar informacion del servidor.">
+Socio (ACT-0003)
+    </a>
+<em>
+Hace una devolusion de pelicula.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Estar al dia con los pagos, sino, deshabilitar opciones de pelicula.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consultar sobre peliculas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+El adminisrador entra a consultar informacion relevante sobre las peliculas.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema tiene alertar para notificar que hace cierto tiempo no consulta la informacion de las peliculas.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0011" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Consultando el Estado de una pelicula.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0012" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Consultar la informacion de la fecha de las peliculas alquiladas.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0013" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Consultar las peliculas que han sido devueltas por el usuario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Se guarda un registro de la ultima vez que se consulto.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consultar sobre socios.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+El administrador entra a consultar informacion relevante del socio.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema tiene alertar para notificar que hace cierto tiempo no consulta la informacion de los socios.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0015" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Entra a consultar el estado del socio.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0016" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Consultar los pagos pendientes que tengan los socios
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0017" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa Administrador que entra a interactuar con el sistema.">
+Administrador (ACT-0001)
+    </a>
+<em>
+Consultar la informacion de los socios mas rentables.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0018" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+Consultar la informacion personal del socio.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El sistema guarda la fecha y la hora en que fue la ultima consulta que se le hizo a la informacion del socio.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+999
+veces por
+                         
+                        año(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0011" />
+<h2 align="left">5.3 
+REQUISITOS NO FUNCIONALES</h2><a name="NFR-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0001</th>
+<th align="left" valign="top" width="100%">
+Adaptable a varios dispositivos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Debera ser adaptable tanto a dispositivos moviles como a pc.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0002</th>
+<th align="left" valign="top" width="100%">
+Generar reportes</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">
+<li>
+<a href="#FRQ-0001" title="Socio">
+                                [FRQ-0001] 
+Socio</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Generar reportes de cierta informacion que es de alta prioridad en el sistema.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0003</th>
+<th align="left" valign="top" width="100%">
+Respuesta inmediata</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+El servidor responde de una forma inmediata a la hora de solicitar informacion especifica.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0004</th>
+<th align="left" valign="top" width="100%">
+Modulo de ayuda</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+El sistema cuenta con un modulo de ayuda en linea.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">validado</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0012" />
+<h1 align="left">6 
+MATRIZ DE RASTREABILIDAD</h1><a name="TRM-0001" />
+<table border="1" width="100%">
+<tr>
+<th bgcolor="#c8e0e0">TRM-0001</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0002" title="Gestionar Socios">OBJ-0002</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0010" title="Gestor de busqueda de informacion">OBJ-0010</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0011" title="Creacion del software">OBJ-0011</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0012" title="Gestion de peliculas">OBJ-0012</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0013" title="Gestor de busqueda de informacion">OBJ-0013</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0014" title="Gestion de alquiler">OBJ-0014</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0001" title="Socio">FRQ-0001</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0002" title="Pelicula">FRQ-0002</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0003" title="Alquiler">FRQ-0003</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+</table>
+<p align="center">
+<b>Matriz de rastreabilidad</b>:
+        
+Objetivos - funcional</p>
+<a name="TRM-0002" />
+<table border="1" width="100%">
+<tr>
+<th bgcolor="#c8e0e0">TRM-0002</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0002" title="Gestionar Socios">OBJ-0002</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0010" title="Gestor de busqueda de informacion">OBJ-0010</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0011" title="Creacion del software">OBJ-0011</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0012" title="Gestion de peliculas">OBJ-0012</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0013" title="Gestor de busqueda de informacion">OBJ-0013</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #OBJ-0014" title="Gestion de alquiler">OBJ-0014</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #NFR-0001" title="Adaptable a varios dispositivos">NFR-0001</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #NFR-0002" title="Generar reportes">NFR-0002</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #NFR-0003" title="Respuesta inmediata">NFR-0003</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+<tr>
+<th align="left" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #NFR-0004" title="Modulo de ayuda">NFR-0004</a>
+</th>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+</tr>
+</table>
+<p align="center">
+<b>Matriz de rastreabilidad</b>:
+        
+Objetivo - No funcional</p>
+<a name="SEC-0013" />
+<h1 align="left">7 
+CONFLICTOS PENDIENTES DE RESOLUCION</h1><a name="CFL-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CFL-0001</th>
+<th align="left" valign="top" width="100%">
+Daño de pelicula</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta directamenta</th>
+<td valign="top">
+<li>
+<a href="#FRQ-0002" title="Pelicula">
+                                [FRQ-0002] 
+Pelicula</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta indirectamente</th>
+<td valign="top">
+<li>
+<a href="#IRQ-0003" title="Informacion de pelicula.">
+                                [IRQ-0003] 
+Informacion de pelicula.</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+Que un cliente llegue a dañar una pelicula.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Posible solución</th>
+<td align="left" valign="top" colspan="1">
+Pago de pelicula dañada.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">resuelto</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CFL-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CFL-0002</th>
+<th align="left" valign="top" width="100%">
+Pelicula en mal estado prestada.</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta directamenta</th>
+<td valign="top">
+<li>
+<a href="#FRQ-0001" title="Socio">
+                                [FRQ-0001] 
+Socio</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta indirectamente</th>
+<td valign="top">
+<li>
+<a href="#IRQ-0001" title="Informacion del cliente.">
+                                [IRQ-0001] 
+Informacion del cliente.</a>
+<br />
+</li>
+<li>
+<a href="#NFR-0002" title="Generar reportes">
+                                [NFR-0002] 
+Generar reportes</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+El cliente se lleva una pelicula en mal estado que luego le va a generar disgustos.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Posible solución</th>
+<td align="left" valign="top" colspan="1">
+La solucion es darle al cliente un reembolso, o cambiarle la pelicula por una en buen estado y proporcionale una pelicula gratis de mas por cortesia.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">resuelto</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CFL-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CFL-0003</th>
+<th align="left" valign="top" width="100%">
+Perdida de informacion</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta directamenta</th>
+<td valign="top">
+<li>
+<a href="#FRQ-0001" title="Socio">
+                                [FRQ-0001] 
+Socio</a>
+<br />
+</li>
+<li>
+<a href="#FRQ-0002" title="Pelicula">
+                                [FRQ-0002] 
+Pelicula</a>
+<br />
+</li>
+<li>
+<a href="#FRQ-0003" title="Alquiler">
+                                [FRQ-0003] 
+Alquiler</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta indirectamente</th>
+<td valign="top">
+<li>
+<a href="#IRQ-0001" title="Informacion del cliente.">
+                                [IRQ-0001] 
+Informacion del cliente.</a>
+<br />
+</li>
+<li>
+<a href="#IRQ-0002" title="Informacion de alquiler.">
+                                [IRQ-0002] 
+Informacion de alquiler.</a>
+<br />
+</li>
+<li>
+<a href="#IRQ-0003" title="Informacion de pelicula.">
+                                [IRQ-0003] 
+Informacion de pelicula.</a>
+<br />
+</li>
+<li>
+<a href="#NFR-0002" title="Generar reportes">
+                                [NFR-0002] 
+Generar reportes</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+Que se dañe el sistema y no se pueda acceder a la informacion del servidor.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Posible solución</th>
+<td align="left" valign="top" colspan="1">
+Un servidor web en el que se guarda la informacion previene perdida de informacion al dañarse el modulo en un sistema operativo.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">resuelto</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CFL-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CFL-0004</th>
+<th align="left" valign="top" width="100%">
+Devolusion</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 11/10/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Carlos Andres Arroyave Ladino</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Mujer(mercadeo)</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta directamenta</th>
+<td valign="top">
+<li>
+<a href="#FRQ-0001" title="Socio">
+                                [FRQ-0001] 
+Socio</a>
+<br />
+</li>
+<li>
+<a href="#FRQ-0002" title="Pelicula">
+                                [FRQ-0002] 
+Pelicula</a>
+<br />
+</li>
+<li>
+<a href="#FRQ-0003" title="Alquiler">
+                                [FRQ-0003] 
+Alquiler</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Afecta indirectamente</th>
+<td valign="top">
+<li>
+<a href="#IRQ-0001" title="Informacion del cliente.">
+                                [IRQ-0001] 
+Informacion del cliente.</a>
+<br />
+</li>
+<li>
+<a href="#IRQ-0002" title="Informacion de alquiler.">
+                                [IRQ-0002] 
+Informacion de alquiler.</a>
+<br />
+</li>
+<li>
+<a href="#IRQ-0003" title="Informacion de pelicula.">
+                                [IRQ-0003] 
+Informacion de pelicula.</a>
+<br />
+</li>
+<li>
+<a href="#NFR-0002" title="Generar reportes">
+                                [NFR-0002] 
+Generar reportes</a>
+<br />
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top" colspan="1">
+No devolver  una pelicula en el tiempo establecido</td>
+</tr>
+<tr>
+<th align="left" valign="top">Posible solución</th>
+<td align="left" valign="top" colspan="1">
+Llamar con anticipacion al cliente para que recuerde con anterioridad de devolver la pelicula.</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">resuelto</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0014" />
+<h1 align="left">8 
+GLOSARIO DE TERMINOS</h1><a name="GLO-0004" />
+<p align="left">
+<b> COTECNOVA:</b>Corporacion De Estudios Tecnologicos Del Norte Del Valle</p>
+<a name="GLO-0002" />
+<p align="left">
+<b> BOT:</b>Software que sirve para comunicarse con el usuario, imitando un comportamiento humano.
+<br />
+</p>
+</body>
+</html>
