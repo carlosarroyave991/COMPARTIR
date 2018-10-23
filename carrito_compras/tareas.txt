@@ -1,0 +1,10 @@
+1- Qué es y como instalar composer
+2- QUé es illuminate/database, como instalarlo y como funciona
+3- Qué es namespace
+4- Qué es Psr-4, como instalarlo y como funciona
+
+
+
+nombre
+email
+password

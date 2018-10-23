@@ -1,7 +1,7 @@
 <?php 
 
 class Usuario{
-	public function index_u(){
+	public function index(){
 		$rows = null;
 		$modelo = new Conexion();
 		$conexion = $modelo->getConexion();
@@ -15,30 +15,99 @@ class Usuario{
 
 		return $rows;
 	}
+    
+    public function search($buscar){
+		$rows = null;
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$nombre = "%".$buscar."%";
+		$sql = "select * from usuarios where nombre like :nombre";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':nombre', $nombre);
+		$statement->execute();
 
-	public function store($nombre_u,$contrase_u){
-        $modelo = new Conexion();
-        $conexion = $modelo->getConexion();
-        $sql="insert into usuarios(nombre_u,contrase_u)values(:nombre_u,:contrase_u)";
-        $statement =$conexion->prepare($sql);
-        $statement->bindParam(':nombre_u',$nombre_u);
-        $statement->bindParam(':contrase_u',$contrase_u);
-        
-        
-        
-        if(!$statement){
-            return "Error al crear el usuario.";
-        }else{
-            $statement->execute();
-            return "Usuario creado correctamente.";
-        }
-    }
+		while($resultado = $statement->fetch()){
+			$rows[] = $resultado;
+		}
 
-	public function update(){
-
+		return $rows;
 	}
 
-	public function delete(){
+	public function store($nombre, $email, $password){
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$sql = "insert into usuarios(nombre, email, password) values(:nombre, :email, :password)";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':nombre', $nombre);
+		$statement->bindParam(':email', $email);
+		$statement->bindParam(':password', $password);
 
+		if(!$statement){
+			return "Error al crear el usuario";
+		}else{
+			$statement->execute();
+			return "Usuario creado correctamente";
+		}
+	}
+
+	public function show($id){
+		$rows = null;
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$sql = "select * from usuarios where id=:id";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':id', $id);
+		$statement->execute();
+		while($resultado = $statement->fetch()){
+			$rows[] = $resultado;
+		}
+		return $rows;
+	}
+
+	public function edit($id){
+		$rows = null;
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$sql = "select * from usuarios where id=:id";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':id', $id);
+		$statement->execute();
+		while($resultado = $statement->fetch()){
+			$rows[] = $resultado;
+		}
+		return $rows;
+	}
+
+	public function update($nombre, $email, $password, $id){
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$sql = "update productos set nombre = ':nombre', email = ':email', password = ':password' where id = ':id')";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':nombre', $nombre);
+		$statement->bindParam(':email', $email);
+		$statement->bindParam(':password', $password);
+		$statement->bindParam(':id', $id);
+
+		if(!$statement){
+			return "Error al crear el usuario";
+		}else{
+			$statement->execute();
+			return "Usuario editado correctamente";
+		}
+	}
+
+	public function delete($id){
+		$modelo = new Conexion();
+		$conexion = $modelo->getConexion();
+		$sql = "delete from usuarios where id=:id";
+		$statement = $conexion->prepare($sql);
+		$statement->bindParam(':id', $id);
+		$statement->execute();
+		if(!$statement){
+			return "Error al eliminar el usuario";
+		}else{
+			$statement->execute();
+			return "Usuario eliminado correctamente";
+		}
 	}
 }
